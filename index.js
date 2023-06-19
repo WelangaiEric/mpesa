@@ -16,11 +16,11 @@ app.get('/',(req,res)=>{
 })
 app.post('/send',(req,res)=>{
     let request = unirest('POST', 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest')
-    headers({
+    .headers({
         'Content-Type': 'application/json',
         'Authorization': 'Bearer MGaGkWC5sSemjkDi9cBKQYqN2ZlL'
     })
-    send(JSON.stringify({
+    'send(JSON.stringify({
         "BusinessShortCode": 8591268,
         "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjMwNjE5MTYyMTA0",
         "Timestamp": "20230619162104",
