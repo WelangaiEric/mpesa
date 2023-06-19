@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon index.js"
    
   },
-  "author": "",
+  "author": "welangai",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.9",
